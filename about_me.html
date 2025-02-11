@@ -4,21 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <style>
-        img {
-            float: right;
-            margin: 10px;
-            width: 200px;
-            height: auto;
-        }
-    </style>
+    <link rel="stylesheet" href="portfolio_styles.css">
 </head>
 <body>
     <h1>Matt Lantin</h1>
     <p>I recently took a trip to Japan, where I explored Tokyo, Kyoto, and Osaka. The experience was amazing, filled with great food, rich history, and beautiful sights like Mount Fuji.</p>
     
     <h2>My Favorite Pet Names</h2>
-    <ul>
+    <ul class="list-container">
         <li>A dog named Max</li>
         <li>A cat named Kiwi Strawberry</li>
         <li>A hamster named Peanut</li>
@@ -28,11 +21,15 @@
     <p>My favorite restaurant is <a href="https://www.sushinakazawa.com/" target="_blank">Sushi Nakazawa</a> because it serves the freshest sushi with an authentic Japanese experience.</p>
     
     <h2>Favorite Food</h2>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/Sushi_platter.jpg" alt="Sushi Platter">
-    <p>I love sushi, especially salmon sashimi and uni. I usually enjoy it with soy sauce, wasabi, and pickled ginger.</p>
+    <div class="food-container">
+        <div class="food-image"></div>
+        <div class="food-description">
+            <p>I love sushi, especially salmon sashimi and uni. I usually enjoy it with soy sauce, wasabi, and pickled ginger.</p>
+        </div>
+    </div>
     
     <h2>Favorite Books</h2>
-    <table border="1">
+    <table>
         <tr>
             <th>Book Name</th>
             <th>Cover</th>
@@ -64,5 +61,43 @@
             <td>A fantasy novel following the adventure of Bilbo Baggins.</td>
         </tr>
     </table>
+    
+    <h2>Contact Information</h2>
+    <form>
+        <table class="form-table">
+            <tr>
+                <td><label for="first-name">First Name:</label></td>
+                <td><input type="text" id="first-name" name="first-name"></td>
+            </tr>
+            <tr>
+                <td><label for="last-name">Last Name:</label></td>
+                <td><input type="text" id="last-name" name="last-name"></td>
+            </tr>
+            <tr>
+                <td><label for="city">City:</label></td>
+                <td><input type="text" id="city" name="city"></td>
+            </tr>
+            <tr>
+                <td><label for="state">State:</label></td>
+                <td>
+                    <select id="state" name="state">
+                        <option value="NY">New York</option>
+                        <option value="CA">California</option>
+                        <option value="TX">Texas</option>
+                        <option value="FL">Florida</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" width="30">
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/X_logo_2023.svg" width="30">
+        </a>
+    </div>
 </body>
 </html>
